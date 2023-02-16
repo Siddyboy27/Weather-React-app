@@ -1,0 +1,28 @@
+.topnav{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   
+   margin-top: 1.5rem/* 24px */;
+    margin-bottom: 1.5rem/* 24px */;
+
+}
+
+.topnav .opt{
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+    font-size: 1.125rem/* 18px */;
+    line-height: 1.75rem/* 28px */;
+    font-weight: 500;
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+
+
+}
+
+.topnav :hover{
+    transform: scale(1.5);
+    transition: ease-in-out;
+}
