@@ -37,18 +37,19 @@ function App() {
 
   
   const changeBg =() =>{
-    if(!weather) return "from-cyan-700 to-blue-700";
+    
 
     const ref= unit==="metric" ? 30: 85;
-
+    console.log(weather.temp);
+    
     if(weather.temp<=ref)
       return "from-cyan-700 to-blue-700";
-    
-    return "from-yellow-700 to-orange-700";
+    else
+      return "from-yellow-700 to-orange-700";
   }
   
   return (
-    <div className={`App ${changeBg()}`} >
+    <div className={`py-5 px-32 bg-gradient-to-br  h-fit shadow-xl shadow-gray-400 ${changeBg()}`} >
       <TopNav setCity={setCity}/>
       <Input setCity={setCity} unit={unit} setUnits={setUnits} setSI={setSI}/>
       {weather && (
